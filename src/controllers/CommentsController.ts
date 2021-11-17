@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import { getRepository } from "typeorm";
-import { Comment } from "../entity/Comment";
+import { Comment } from "../entities/Comment";
 
 export const commentsRouter = express.Router();
 const commentRepository = () => getRepository(Comment);
