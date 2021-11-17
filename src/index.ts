@@ -4,7 +4,7 @@ import { Request, Response } from "express";
 import { createConnection } from "typeorm";
 import cors from "cors";
 import helmet from "helmet";
-import { Comment } from "entity/Comment";
+import { Comment } from "./entity/Comment"
 
 dotenv.config();
 

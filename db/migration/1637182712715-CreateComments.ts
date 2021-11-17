@@ -8,8 +8,8 @@ export class CreateComments1637182712715 implements MigrationInterface {
         id bigint(20) NOT NULL AUTO_INCREMENT,
         authorEmail varchar(255),
         body varchar(1000) NOT NULL,
-        createdAt datetime(6) NOT NULL DEFAULT current_timestamp(6),
-        updatedAt datetime(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6),
+        createdAt datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+        updatedAt datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
         PRIMARY KEY (id)
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
     `);
